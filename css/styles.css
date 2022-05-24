@@ -32,6 +32,11 @@ h1{
   margin-left: 25px;
 }
 
+h1:hover {
+color:hsl(178, 100%, 50%);
+cursor:pointer;
+}
+
 p{
   font-size: 1rem;
   font-weight: 400;
@@ -40,12 +45,38 @@ p{
   margin-left: 25px;
 }
 
-.equilibrium-img {
-  width:250px;
-  height: 250px;
-  margin-top:10px;
-  border-radius:20px;
+hr{
+  color:hsl(215, 32%, 27%);
 }
+
+.img-wrapper {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 10px auto;
+}
+.img-wrapper .image-equilibrium{
+  width: 100%;
+  height: 100%;
+}
+.overlay {
+  background-color: hsla(178, 100%, 50%, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.img-wrapper:hover .overlay {
+  opacity: 1;
+}
+
 
 .eth {
   color:hsl(178, 100%, 50%);
@@ -94,6 +125,10 @@ gap:1px;
 
 .white{
   color:white;
+}
+.white:hover{
+  color:hsl(178, 100%, 50%);
+  cursor:pointer;
 }
 
 .attribution {
